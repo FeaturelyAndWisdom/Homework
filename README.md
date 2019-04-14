@@ -1,2 +1,4 @@
-# Homework
-Xsyu各种课设
+﻿# Homework
+硬件课设
+64位运算器
+Verilog

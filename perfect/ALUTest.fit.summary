@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Jan 11 16:06:36 2018
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Full Version
+Revision Name : ALUTest
+Top-level Entity Name : Block3
+Family : Cyclone II
+Device : EP2C70F896C6
+Timing Models : Final
+Total logic elements : 3,091 / 68,416 ( 5 % )
+    Total combinational functions : 3,074 / 68,416 ( 4 % )
+    Dedicated logic registers : 302 / 68,416 ( < 1 % )
+Total registers : 302
+Total pins : 85 / 622 ( 14 % )
+Total virtual pins : 0
+Total memory bits : 0 / 1,152,000 ( 0 % )
+Embedded Multiplier 9-bit elements : 6 / 300 ( 2 % )
+Total PLLs : 0 / 4 ( 0 % )

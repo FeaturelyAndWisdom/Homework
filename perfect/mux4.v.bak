@@ -1,0 +1,26 @@
+module mux4(A,B,CE,C,OUT,s2);
+
+input [31:0]A,B,CE,C;
+
+input [1:0]s2;
+
+output [31:0] OUT;
+
+reg [31:0] ou;
+always @(*) begin
+	case(s2)
+		
+		2'b00 :ou<=CE;
+		
+		2'b01: ou<=A;
+		
+		2'b10: ou<=B;
+		
+		2'B11: ou<=C;
+		
+	endcase
+end
+
+assign OUT = ou;
+
+endmodule 
