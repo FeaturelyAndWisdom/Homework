@@ -1,0 +1,238 @@
+﻿@charset "utf-8";
+/* CSS Document */
+* {
+    background-repeat: no-repeat;
+}
+
+html, body {
+    width: 100%;
+    height: 100%
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    font-size: 12px;
+    min-width: 1280px;
+}
+
+a {
+    cursor: pointer;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+ul, li, dl, dd, dt {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    border: 0px;
+}
+
+form {
+    margin: 0px;
+    padding: 0px;
+}
+
+input, select {
+    border: 1px #cccccc solid;
+}
+
+/* header*/
+.mainbody {
+    background: url(img/background-bg.png) no-repeat 50% bottom;
+    height: 90%;
+    max-height: 850px;
+    min-width: 1280px;
+}
+
+.smallBox {
+    background: url(img/login.png) no-repeat;
+    width: 1280px;
+    margin: 0px auto;
+    padding-top: 175px;
+    height: 205px;
+}
+
+.sb-content {
+    width: 980px;
+    margin: 0px auto
+}
+
+.smallBox input {
+    font-size: 14px;
+}
+
+.leftList {
+    width: 350px;
+    height: 66px;
+    background: #FFF url(img/icon-name.png) no-repeat 16px;
+    padding-left: 80px;
+    border: none;
+    margin-right: 10px;
+}
+
+.rightList {
+    width: 350px;
+    height: 66px;
+    background: #FFF url(img/icon-mima.png) no-repeat 16px;
+    padding-left: 80px;
+    border: none;
+    margin-right: 20px;
+}
+
+.logIn {
+    background: #336699 url(img/icon-login.png) no-repeat center;
+    height: 68px;
+    width: 80px;
+    border: none;
+    vertical-align: top
+}
+
+.smallBox p {
+    color: #fff;
+    padding-top: 30px;
+}
+/* footer*/
+.footer {
+    width: 100%;
+    height: 34px;
+    background: #f6f6f6;
+    padding-top: 10px;
+    text-align: center;
+    color: #999
+}
+
+    .footer img {
+        vertical-align: middle;
+    }
+
+.box {
+    width: 1280px;
+    margin: auto;
+}
+
+.box1 {
+    position: absolute;
+    width: 220px;
+    background: url(img/icon1.png) no-repeat;
+    margin-left: 380px;
+    border-right: solid #CCC 1px;
+    list-style: none;
+}
+
+    .box1 p {
+        color: #999;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 30px;
+        padding-top: 3px;
+    }
+
+.box2 {
+    position: absolute;
+    right: 360px;
+    width: 220px;
+    background: url(img/icon2.png) no-repeat;
+    margin-right: 380px;
+    list-style: none;
+}
+
+    .box2 p {
+        color: #999;
+        margin-top: 0px;
+        margin-left: 30px;
+        padding-top: 3px;
+    }
+
+.foot {
+    width: 100%;
+    height: 30px;
+    background: #2b4872;
+    color: #fff;
+    text-align: center
+}
+
+.logindiv {
+    hight: 100%
+}
+
+.fl {
+    color: #fff;
+    float: left
+}
+
+.fr {
+    color: #fff;
+    float: right
+}
+
+    .fr div {
+        text-align: center
+    }
+
+/* For browser hint */
+.browser-hint {
+    display: none;
+    z-index: 2;
+    width: 500px;
+    height: 95px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -250px;
+    text-align: center;
+    background-color: #FEF9D0;
+}
+
+    .browser-hint h2 {
+        font-size: 12px;
+    }
+
+    .browser-hint ul {
+        padding: 0px 20px;
+        /* IE7 hack, otherwise ul will left space on left */
+        margin: 0px;
+    }
+
+    .browser-hint li {
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        list-style: none outside none;
+        float: left;
+        margin: 0px 46px;
+    }
+
+        .browser-hint li a {
+            display: block;
+            height: 60px;
+            width: 60px;
+        }
+
+.chrome {
+    background: url("../images/browsers/chrome-60x60.png") no-repeat scroll 0 0 transparent;
+}
+
+.firefox {
+    background: url("../images/browsers/firefox-60x60.png") no-repeat scroll 0 0 transparent;
+}
+
+.iexplorer {
+    background: url("../images/browsers/ie-60x60.png") no-repeat scroll 0 0 transparent;
+}
+
+.ie6 .browser-hint {
+    display: block;
+}
+
+.ie7 .browser-hint {
+    display: block;
+}
+

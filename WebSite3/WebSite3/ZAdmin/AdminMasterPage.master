@@ -1,0 +1,171 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../css2/home.css" rel="stylesheet" type="text/css" />
+    <link href="../css2/beangle-ui,colorbox,chosen.css" rel="stylesheet" type="text/css" />
+    <link href="../css2/WdatePicker.css" rel="stylesheet" type="text/css" />
+    <link href="../css2/foundation.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery-1.9.1.js"></script>
+    <script>
+        $(function () {
+            $("#my").click(function () {
+                $(this).toggleClass("first_menu");
+                $(this).toggleClass("first_menu active");
+                if ($("#myul").css('display') == 'none') {
+                    $("#myul").css('display', 'block');
+                } else {
+                    $("#myul").css('display', 'none');
+                }
+            })
+
+            $("#lh").click(function () {
+                $(this).toggleClass("first_menu");
+                $(this).toggleClass("first_menu active");
+                if ($("#lhul").css('display') == 'none') {
+                    $("#lhul").css('display', 'block');
+                } else {
+                    $("#lhul").css('display', 'none');
+                }
+            })
+
+            $("#sj").click(function () {
+                $(this).toggleClass("first_menu");
+                $(this).toggleClass("first_menu active");
+                if ($("#sjul").css('display') == 'none') {
+                    $("#sjul").css('display', 'block');
+                } else {
+                    $("#sjul").css('display', 'none');
+                }
+            })
+
+            $("#gg").click(function () {
+                $(this).toggleClass("first_menu");
+                $(this).toggleClass("first_menu active");
+                if ($("#ggul").css('display') == 'none') {
+                    $("#ggul").css('display', 'block');
+                } else {
+                    $("#ggul").css('display', 'none');
+                }
+            })
+
+            $("#safe").click(function () {
+                $(this).toggleClass("first_menu");
+                $(this).toggleClass("first_menu active");
+                if ($("#safeul").css('display') == 'none') {
+                    $("#safeul").css('display', 'block');
+                } else {
+                    $("#safeul").css('display', 'none');
+                }
+            })
+
+        });
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <!--Head-->
+<div style="float: left;margin-left:15px;width:30%">
+	<img src="../images/home/logo2.png" height="58px">
+</div>
+
+<div class="banner">
+	<div>
+		<div class="banner_area">
+			<table cellpadding="0" cellspacing="0"  class="button_box_1">
+				<tr>
+					<td width="25"></td>
+					<td width="90">
+						<a href="#" class="a3" onclick="editAccount()">我的账户</a>&nbsp;&nbsp;
+					</td>
+					<td width="90">
+						<a href="#" class="a3">返回首页</a>&nbsp;&nbsp;
+					</td>
+					<td>
+                        <asp:LinkButton runat="server" CssClass="a3" target="_top" OnClick="Unnamed1_Click">退出</asp:LinkButton>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="banner_area">
+          <a href="#" title="查看详情" style="color:#ffffff">超级管理员(201507060213)</a>&nbsp;&nbsp;
+            <span style="padding:0 2px;color:#FFF;font-weight:blod;">管理员</span>
+		</div>
+	</div>
+	<br><br>
+	<div style="float:right;display:block;clear:both;">
+		<ul class="nav_box" id="nav_box">
+		</ul>
+	</div>
+</div>
+<!--  End Head -->
+        <!--Left-->
+        <table id="mainTable" style="width:100%;height:95%;clear:both;float:left;" >
+	<tr>
+	   <td width="162" valign="top" id="leftTD" style="height:100%;width:10%">
+			<div id="menu_panel" class="ajax_container">
+            <ul class="menu collapsible">
+     <%--<li style="margin:0px;" class="expand"> 
+     <a class="first_menu" id="my" href="#">学生管理</a>
+     <ul class="acitem" id="myul" style="display: none;">
+     <div class="scroll_box">
+       			<li><a href="addStu.aspx" class="p_1">学生添加</a></li>
+       			<li><a href="#" class="p_1">学生列表</a></li>
+                <li><a href="findStu.aspx" class="p_1">学生查询</a></li>
+       </div></ul></li>
+     <li>
+     <a class="first_menu" id="lh" href="#">教师管理</a>
+     <ul class="acitem" id="lhul" style="display: none;">
+     <div class="scroll_box">
+       			<li><a href="#" class="p_1">教师列表</a></li>
+                <li><a href="addTea.aspx" class="p_1">教师添加</a></li>  
+                <li><a href="findTea.aspx" class="p_1">教师查询</a></li>  
+       </div></ul></li>
+     <li>
+     <a class="first_menu" id="sj" href="#">院系管理</a>
+     <ul class="acitem" id="sjul" style="display: none;">
+     <div class="scroll_box">
+                <li><a href="#" class="p_1">院系列表</a></li>
+       			<li><a href="addAcad.aspx" class="p_1">院系添加</a></li>
+                <li><a href="findAcad.aspx" class="p_1">院系查询</a></li>
+                <li><a href="#" class="p_1">专业列表</a></li>
+       			<li><a href="addMajor.aspx" class="p_1">专业添加</a></li>
+                <li><a href="findMaj.aspx" class="p_1">专业查询</a></li>
+                <li><a href="#" class="p_1">班级列表</a></li>
+                <li><a href="addCla.aspx" class="p_1">班级添加</a></li>
+                <li><a href="findCla.aspx" class="p_1">班级查询</a></li>
+       </div></ul></li>--%>
+     <li>
+     <a class="first_menu" id="gg" href="#">毕设管理</a>
+     <ul class="acitem" id="ggul" style="display: none;">
+  <div class="scroll_box">
+       			<li><a href="allLes.aspx" class="p_1">毕设列表</a></li>
+                <li><a href="pass.aspx" class="p_1">已通过审核毕设</a></li>
+                <li><a href="nopass.aspx" class="p_1">未通过审核毕设</a></li>
+                <li><a href="findLes.aspx" class="p_1">查找毕设</a></li>
+  </div></ul></li>
+     <li>
+     <a class="first_menu" id="safe" href="#">安全</a>
+     <ul class="acitem" id="safeul" style="display: none;">
+  <div class="scroll_box">
+       			<li><a href="changePwd.aspx" class="p_1">修改密码</a></li>
+  </div></ul></li>
+</ul>
+            </div>
+	   </td>
+        <!---->
+        <td width="1460" valign="top" id="rightTD">
+        <div id="main" class="ajax_container">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        </div>
+        </td>
+    </form>
+</body>
+</html>
