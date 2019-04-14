@@ -1,0 +1,87 @@
+
+/* CSS Document */
+
+
+.header {
+    width: 100%;
+    height: 110px;
+    background: url(../img/header_bj.gif) center center no-repeat #FFF;
+}
+
+.header .top {
+    width: 1400px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.header .logo {
+    width: 344px;
+    margin-left: 129px;
+}
+.fl {
+    float: left;
+}
+.w1 {
+    background-color: #dceffe;
+}
+.w2{
+	margin: 0px auto;
+	width: 1400px;
+	background-color:#FFF;
+}
+.w2 tr td{
+	height:120px;
+	}
+li{
+	height:80;
+	width:100%;
+	}
+.footer1 {
+    width: 100%;
+    height: 42px;
+    overflow: hidden;
+    background: #1596e3;
+    border-bottom: 1px solid #167cb9;
+}
+.footer2 {
+    width: 1200px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.select {
+    font-family: "宋体";
+    font-size: 12px;
+    color: #1e3e52;
+    width: 182px;
+    height: 19px;
+    float: left;
+    margin: 6px 10px 0 19px;
+    background: #c4e5f8;
+    border: 1px solid #597a8d;
+    text-align: center;
+}
+.link {
+    width: auto;
+    height: 31px;
+    overflow: hidden;
+    margin-top: 7px;
+}
+.f1{
+	float: left;
+	}
+
+.wsbg {
+    width: auto;
+    height: 31px;
+    float: left;
+    overflow: hidden;
+    margin-top: 7px;
+    margin-left: 50px;
+    border-left: 1px solid #0e72aa;
+}
+.wsbg a {
+    font-family: "宋体";
+    font-size: 18px;
+    color: #eaeaea;
+    line-height: 31px;
+	text-decoration: none;
+}
