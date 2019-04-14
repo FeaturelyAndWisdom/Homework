@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="StuMaster.master.cs" Inherits="student_StuMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <h1 align="center">学生教务系统</h1>
+    <div>
+        <table align="left" border="1">
+            <tr><td><a href="myInfo.aspx">我的信息</a></td></tr>
+            <tr><td><a href="changeInfo.aspx">修改信息</a></td></tr>
+            <tr><td><a href="changePwd.aspx">修改密码</a></td></tr>
+            <tr><td><a href="myLes.aspx">查看我的课程</a></td></tr>
+            <tr><td><a href="myGrade.aspx">查看所有成绩</a></td></tr>
+            <tr><td><asp:LinkButton runat="server" OnClick="loginout">退出系统</asp:LinkButton></td></tr>
+        </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

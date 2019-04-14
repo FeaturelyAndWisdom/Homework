@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="TeaMaster.master.cs" Inherits="teacher_TeaMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <h1 align="center">教师教务系统</h1>
+        <table align="left" border="1">
+            <tr><td><a href="perDetail.aspx">我的信息</a></td></tr>
+            <tr><td><a href="changePwd.aspx">修改密码</a></td></tr>
+            <tr><td><a href="Lesing.aspx">正在进行课程列表</a></td></tr>
+            <tr><td><a href="end.aspx">已结课课程列表</a></td></tr>
+            <tr><td><asp:LinkButton runat="server" OnClick="loginout">退出系统</asp:LinkButton></td></tr>
+        </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
