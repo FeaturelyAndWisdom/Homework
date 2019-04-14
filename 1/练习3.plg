@@ -1,0 +1,49 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ¡∑œ∞3 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\asus\AppData\Local\Temp\RSP27E1.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/¡∑œ∞3.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\øŒ…Ë2017\1\¡∑œ∞3.cpp"
+"E:\øŒ…Ë2017\1\¡∑œ∞3Dlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\asus\AppData\Local\Temp\RSP27E1.tmp" 
+Creating temporary file "C:\Users\asus\AppData\Local\Temp\RSP27E2.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/¡∑œ∞3.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\øŒ…Ë2017\1\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\asus\AppData\Local\Temp\RSP27E2.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/¡∑œ∞3.pdb" /machine:I386 /out:"Release/¡∑œ∞3.exe"  ".\Release\StdAfx.obj" ".\Release\¡∑œ∞3.obj" ".\Release\¡∑œ∞3Dlg.obj" ".\Release\¡∑œ∞3.res" "
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+¡∑œ∞3.cpp
+¡∑œ∞3Dlg.cpp
+E:\øŒ…Ë2017\1\¡∑œ∞3Dlg.cpp(216) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+E:\øŒ…Ë2017\1\¡∑œ∞3Dlg.cpp(226) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+E:\øŒ…Ë2017\1\¡∑œ∞3Dlg.cpp(226) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+E:\øŒ…Ë2017\1\¡∑œ∞3Dlg.cpp(228) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+E:\øŒ…Ë2017\1\¡∑œ∞3Dlg.cpp(228) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+E:\øŒ…Ë2017\1\¡∑œ∞3Dlg.cpp(256) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+E:\øŒ…Ë2017\1\¡∑œ∞3Dlg.cpp(256) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+E:\øŒ…Ë2017\1\¡∑œ∞3Dlg.cpp(260) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+E:\øŒ…Ë2017\1\¡∑œ∞3Dlg.cpp(260) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+E:\øŒ…Ë2017\1\¡∑œ∞3Dlg.cpp(264) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+E:\øŒ…Ë2017\1\¡∑œ∞3Dlg.cpp(264) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+¡∑œ∞3.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
