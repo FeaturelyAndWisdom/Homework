@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ks.mapper.KnowledgeMapper">
+
+    <insert id="add" parameterType="knowledge">
+        insert into knowledge(word,pinyin,type) values(#{word},#{pinyin},#{type})
+    </insert>
+
+    <select id="hzfindAll" resultType="knowledge">
+        select * from knowledge where type=0
+    </select>
+
+    <select id="cyfindAll" resultType="knowledge">
+        select * from knowledge where type=1
+    </select>
+
+    <update id="delete" parameterType="int">
+        update knowledge set isdel=1 where kid=#{kid}
+    </update>
+
+</mapper>

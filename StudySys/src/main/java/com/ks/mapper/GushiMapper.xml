@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ks.mapper.GushiMapper">
+
+    <insert id="add" parameterType="gushi">
+        insert into gushi(title,author,word,pinyin) values (#{title},#{author},#{word},#{pinyin});
+    </insert>
+
+    <update id="delete" parameterType="int">
+        update gushi set isdel=1 where gid=#{gid}
+    </update>
+
+    <select id="findByGid" parameterType="int" resultType="gushi">
+        select * from gushi where gid=#{gid} and isdel=0;
+    </select>
+
+    <select id="findAllGushi" resultType="gushi">
+        select * from gushi
+    </select>
+</mapper>

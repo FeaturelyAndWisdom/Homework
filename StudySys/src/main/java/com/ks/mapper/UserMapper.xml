@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ks.mapper.UserMapper">
+
+    <insert id="add" parameterType="user">
+        insert into user(uname,pwd,question,answer,address,birthday,role) values(#{uname},#{pwd},#{question},#{answer},#{address},#{birthday},#{role})
+    </insert>
+
+    <update id="update" parameterType="user">
+        update user set
+          <if test="pwd!=null and pwd!=''">pwd=#{pwd}</if>
+          <if test="address!=null and address!=''">,address=#{address}</if>
+          <if test="uimg!=null and uimg!=''">,uimg=#{uimg}</if> where uid=#{uid}
+    </update>
+
+    <update id="delete" parameterType="int">
+        update user set isdel=1 where uid=#{uid}
+    </update>
+
+    <update id="recover" parameterType="int">
+        update user set isdel=0 where uid=#{uid}
+    </update>
+
+    <select id="findById" parameterType="int" resultType="user">
+        select * from user where uid=#{uid}
+    </select>
+
+    <select id="findAll" resultType="user">
+        select * from user where role=0
+    </select>
+
+    <select id="login" parameterType="user" resultType="user">
+        select * from user where uname=#{uname} and pwd=#{pwd}
+    </select>
+
+    <select id="checkName" parameterType="user" resultType="int">
+        select count(*) from user where isdel=0 and uname=#{uname}
+    </select>
+
+</mapper>
