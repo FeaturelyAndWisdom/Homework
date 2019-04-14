@@ -1,2 +1,4 @@
-# Homework
-Xsyu各种课设
+﻿# Homework
+C++程序设计Dialog
+研究生初试成绩管理
+VS2013
